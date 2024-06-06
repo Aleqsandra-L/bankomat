@@ -1,4 +1,5 @@
 from pakiet.bankomat import Bankomat
+from pakiet.probankomat import ProBankomat
 
 print("Witam w programie")
 
@@ -32,7 +33,13 @@ def multi3(a,b):
         print("Działanie zostało zakończone")
 
 
-print(multi(a= 5, b= 5))
-print(multi2(a="5", b="tomek"))
-print(multi3(a="5", b="tomek"))
-print(multi3(a=5, b=6))
+# print(multi(a= 5, b= 5))
+# print(multi2(a="5", b="tomek"))
+# print(multi3(a="5", b="tomek"))
+# print(multi3(a=5, b=6))
+
+bankomat2 = ProBankomat()
+bankomat2.sprawdz_saldo()
+bankomat2.wplata(1000)
+bankomat2.wyplata(400)
+bankomat2.zakup_biletu()
